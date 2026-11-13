@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eleni Liyew, BI and Data Analyst in Calgary</title>
+<meta name="description" content="Eleni Liyew is a business intelligence and data analyst in Calgary, AB. SQL, Power BI, Azure Data Factory and data modeling.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Eleni Liyew, BI and Data Analyst in Calgary">
+<meta property="og:description" content="Business intelligence and data analyst in Calgary, AB. SQL, Power BI, Azure Data Factory and data modeling.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2250%22 fill=%22%232f5d4e%22/><text x=%2250%22 y=%2268%22 font-size=%2258%22 font-family=%22Georgia,serif%22 fill=%22white%22 text-anchor=%22middle%22>E</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#ffffff;
+    --ink:#1f2a30;
+    --muted:#5b6770;
+    --rule:#dfe4e2;
+    --spruce:#2f5d4e;
+    --spruce-tint:#eef3f0;
+    --serif:'Newsreader', Georgia, serif;
+    --sans:'Public Sans', -apple-system, 'Segoe UI', sans-serif;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} }
+
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:var(--sans); font-size:17px; line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--spruce); text-decoration-thickness:1px; text-underline-offset:3px;}
+  a:hover{text-decoration-thickness:2px;}
+  a:focus-visible{outline:2px solid var(--spruce); outline-offset:3px; border-radius:2px;}
+
+  .page{max-width:1000px; margin:0 auto; padding:0 28px;}
+  .prose{max-width:38em;}
+  @media(max-width:600px){ body{font-size:16px;} .page{padding:0 20px;} }
+
+  .top{
+    display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:8px 24px;
+    padding:28px 0; border-bottom:1px solid var(--rule);
+  }
+  .top-name{font-family:var(--serif); font-size:20px; font-weight:500; color:var(--ink); text-decoration:none;}
+  .top nav{display:flex; gap:22px; flex-wrap:wrap; font-size:15px;}
+  .top nav a{color:var(--muted); text-decoration:none;}
+  .top nav a:hover{color:var(--spruce); text-decoration:underline;}
+
+  .intro{padding:88px 0 72px;}
+  .intro h1{
+    font-family:var(--serif); font-weight:500;
+    font-size:clamp(44px, 8vw, 84px); line-height:1.0; letter-spacing:-0.02em;
+    margin-bottom:28px;
+  }
+  .intro p{font-size:20px; line-height:1.6; margin-bottom:18px;}
+  .intro p.quiet{font-size:17px; color:var(--muted);}
+  .intro .links{display:flex; gap:24px; flex-wrap:wrap; margin-top:30px; font-weight:500;}
+
+  section{padding:64px 0; border-top:1px solid var(--rule);}
+  h2{font-family:var(--serif); font-weight:500; font-size:34px; line-height:1.2; margin-bottom:32px;}
+  h3{font-family:var(--serif); font-weight:600; font-size:25px; line-height:1.25; margin-bottom:6px;}
+  .meta{color:var(--muted); font-size:15px; margin-bottom:18px;}
+  p + p{margin-top:14px;}
+
+  .project{padding:8px 0 56px;}
+  .project + .project{padding-top:48px; border-top:1px solid var(--rule);}
+  .project:last-child{padding-bottom:0;}
+  .findings{margin:18px 0 0 1.1em;}
+  .findings li{padding:3px 0;}
+  .findings strong{font-weight:600;}
+  .project-links{margin-top:18px; display:flex; gap:22px; flex-wrap:wrap; font-weight:500; font-size:16px;}
+
+  .embed{margin-top:30px;}
+  .embed iframe{
+    display:block; width:100%; aspect-ratio:600/373.5; min-height:320px;
+    border:0; background:var(--spruce-tint); border-radius:4px;
+  }
+  .embed figcaption{font-size:14px; color:var(--muted); margin-top:10px;}
+
+  .job{display:grid; grid-template-columns:1fr auto; gap:0 24px; padding:22px 0;}
+  .job + .job{border-top:1px solid var(--rule);}
+  .job h3{font-size:21px; margin:0;}
+  .job .where{color:var(--muted); margin-bottom:10px;}
+  .job .when{color:var(--muted); font-size:15px; font-variant-numeric:tabular-nums; white-space:nowrap; padding-top:4px;}
+  .job ul{grid-column:1 / -1; margin-left:1.1em; max-width:42em;}
+  .job li{padding:3px 0;}
+  @media(max-width:600px){ .job{grid-template-columns:1fr;} .job .when{padding:0 0 4px;} }
+
+  .two{display:grid; grid-template-columns:1fr 1fr; gap:40px;}
+  @media(max-width:720px){ .two{grid-template-columns:1fr; gap:28px;} }
+  .two h3{font-size:21px;}
+  .two h3 + p{margin-bottom:22px;}
+  .two p{color:var(--muted);}
+  .two p.ink{color:var(--ink);}
+
+  footer{padding:72px 0 56px; border-top:1px solid var(--rule);}
+  footer h2{margin-bottom:16px;}
+  footer .prose p{font-size:19px;}
+  footer .small{margin-top:56px; font-size:14px; color:var(--muted);}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="top">
+    <a class="top-name" href="#">Eleni Liyew</a>
+    <nav aria-label="Sections">
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="intro">
+      <h1>Eleni Liyew</h1>
+      <div class="prose">
+        <p>I'm a business intelligence analyst in Calgary. I take messy data, clean it in SQL, model it as a star schema and build the Power BI report people actually use.</p>
+        <p class="quiet">Before this I spent two years in billing and inventory at Unilever, working in SAP every day, so checking that the numbers add up is a habit I bring to every project. I'm now studying Business Intelligence and Data Analytics at SAIT and looking for BI or data analyst work in Calgary.</p>
+      </div>
+      <div class="links">
+        <a href="#projects">See my projects</a>
+        <a href="mailto:elenizeleke16@gmail.com">Email me</a>
+        <a href="https://github.com/eleni26" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/eleni-liyew/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <article class="project">
+        <h3>Did rezoning change what gets built in Calgary?</h3>
+        <p class="meta">Azure Data Factory, Azure SQL and Power BI, November 2026</p>
+        <div class="prose">
+          <p>Calgary changed its zoning rules in August 2024 and reversed them in August 2026. I wanted to know whether that changed what actually got built. An Azure Data Factory pipeline pulls all 503,000 building permits from the City's open data into a data lake and then into Azure SQL, where stored procedures clean them and build a star schema for Power BI.</p>
+          <ul class="findings">
+            <li>New housing units rose <strong>34%</strong> during rezoning, from 1,504 to 2,020 a month.</li>
+            <li>Duplexes, townhouses and rowhouses grew <strong>43%</strong>, but their share of new homes barely moved, because every other type grew too.</li>
+            <li>The first months after the repeal are still above the old baseline, though it's too early to call.</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/eleni26/calgary-housing-permits" target="_blank" rel="noopener">Code and write-up on GitHub</a>
+          </div>
+        </div>
+        <figure class="embed">
+          <iframe title="Calgary housing permits dashboard" src="https://app.powerbi.com/view?r=eyJrIjoiYWQ3YmMxY2EtOTAyYS00ZDNkLWE2YzQtOTMxYTFiYjUxNWNkIiwidCI6ImY1MmYyMTgzLTlmNjctNGFkMi1iNjU2LTZmNzU0ZmUxOTZjYiIsImMiOjZ9" allowfullscreen loading="lazy"></iframe>
+          <figcaption>The live dashboard. Use the year filter and the page tabs at the bottom.</figcaption>
+        </figure>
+      </article>
+
+      <article class="project">
+        <h3>Sales performance analysis</h3>
+        <p class="meta">SQL Server and Power BI, June 2026</p>
+        <div class="prose">
+          <p>The data was deliberately messy: misspelled categories, placeholder phone numbers, impossible dates, and a Region column that didn't match the states. I cleaned it in SQL Server and built a sales fact table with six dimensions.</p>
+          <p>Along the way I tracked down a $353K gap between the dashboard total and the regional breakdown (blank region values my NULL check missed) and a duplicate relationship that was inflating order counts. The report has a sales overview page and a sales distribution page, with a year slicer.</p>
+          <div class="project-links">
+            <a href="https://github.com/eleni26/Sales-Performance" target="_blank" rel="noopener">Code on GitHub</a>
+          </div>
+        </div>
+        <figure class="embed">
+          <iframe title="Sales performance dashboard" src="https://app.powerbi.com/view?r=eyJrIjoiMDFhODc4NTItYjhmYy00Y2MyLTgzZjctM2EzNjBlZGE1MGIzIiwidCI6ImY1MmYyMTgzLTlmNjctNGFkMi1iNjU2LTZmNzU0ZmUxOTZjYiIsImMiOjZ9" allowfullscreen loading="lazy"></iframe>
+          <figcaption>The live dashboard. Use the year slicer and click the charts to filter.</figcaption>
+        </figure>
+      </article>
+
+      <article class="project">
+        <h3>Customer lifetime value</h3>
+        <p class="meta">SQL Server and Power BI, May 2026</p>
+        <div class="prose">
+          <p>Built on AdventureWorks. A T-SQL stored procedure builds the star schema, and Power BI shows lifetime value ($5.75K), average order value ($3.49K) and repeat-purchase rate for more than 19,000 customers.</p>
+          <p>My first retention number was 86.83%, which looked great and was wrong. It counted customers with more than one order line, not more than one order. The real figure is 39%, and that's what the dashboard shows now.</p>
+          <div class="project-links">
+            <a href="https://github.com/eleni26/End-to-end-BI-project-on-CLV" target="_blank" rel="noopener">Code on GitHub</a>
+          </div>
+        </div>
+        <figure class="embed">
+          <iframe title="Customer lifetime value dashboard" src="https://app.powerbi.com/view?r=eyJrIjoiYThmYWY3NjQtNjRhMi00YmVmLWIxNzAtODY1MTk4MWExOTYwIiwidCI6ImY1MmYyMTgzLTlmNjctNGFkMi1iNjU2LTZmNzU0ZmUxOTZjYiIsImMiOjZ9" allowfullscreen loading="lazy"></iframe>
+          <figcaption>The live dashboard. Try the year and category slicers.</figcaption>
+        </figure>
+      </article>
+
+      <article class="project">
+        <h3>Whale vs. diversity sales analysis</h3>
+        <p class="meta">SQL Server and Power BI</p>
+        <div class="prose">
+          <p>How much of a reseller's revenue rides on a few huge orders? In AdventureWorks, orders over $50K are 13% of the 3,806 reseller orders but bring in 45.5% of the revenue. I built a SQL Server data mart and a Power BI dashboard showing which territories lean on those big orders most: France, Northwest, the UK and Southwest, all above 50%.</p>
+          <div class="project-links">
+            <a href="https://github.com/eleni26/Whale-vs-diversity-sales-analysis" target="_blank" rel="noopener">Code on GitHub</a>
+          </div>
+        </div>
+        <figure class="embed">
+          <iframe title="Whale vs. diversity sales dashboard" src="https://app.powerbi.com/view?r=eyJrIjoiNTg2OTcyNWYtMDMxNS00NGI3LTgwMmUtZWY1ZmY3ZTI4ZjRmIiwidCI6ImY1MmYyMTgzLTlmNjctNGFkMi1iNjU2LTZmNzU0ZmUxOTZjYiIsImMiOjZ9" allowfullscreen loading="lazy"></iframe>
+          <figcaption>The live dashboard. Use the territory group and product category slicers.</figcaption>
+        </figure>
+      </article>
+
+      <article class="project">
+        <h3>GreenFlow Alberta (in progress)</h3>
+        <p class="meta">Azure Data Factory, Azure SQL and Power BI, team of four, due December 2026</p>
+        <div class="prose">
+          <p>Our SAIT capstone asks whether Alberta oil and gas operators can produce more while emitting less. We're using the AER's public flaring, venting and production data. Right now we're designing the star schema and the Azure setup. A custom environmental performance index and a Power BI dashboard come after that.</p>
+        </div>
+      </article>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+
+      <div class="job">
+        <div>
+          <h3>Billing Analyst</h3>
+          <div class="where">Unilever, Ethiopia</div>
+        </div>
+        <div class="when">Jan 2024 to Sep 2025</div>
+        <ul>
+          <li>Audited 200+ high-value invoices a week with 100% accuracy, keeping financial reporting and compliance data clean.</li>
+          <li>Investigated SAP billing variances and contract discrepancies, cutting financial leakage through root-cause analysis.</li>
+          <li>Worked with Finance and Logistics to fix data issues, which made cross-team reporting more accurate.</li>
+          <li>Trained new analysts on SAP billing, lowering error rates and shortening ramp-up time.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div>
+          <h3>SAP Inventory Clerk</h3>
+          <div class="where">Unilever, Ethiopia</div>
+        </div>
+        <div class="when">Sep 2023 to Dec 2023</div>
+        <ul>
+          <li>Managed finished-goods inventory in SAP MM, keeping stock records audit-ready.</li>
+          <li>Reached 100% inventory accuracy through systematic stock monitoring, supporting distribution planning.</li>
+          <li>Reconciled monthly cycle counts against SAP records and resolved the discrepancies.</li>
+          <li>Coordinated with warehouse teams on picking and shipping workflows.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="two">
+        <div>
+          <h2>Education</h2>
+          <h3>Business Intelligence and Data Analytics Diploma</h3>
+          <p>SAIT, Calgary. Started September 2026.</p>
+          <h3>BA in Economics</h3>
+          <p>Bahir Dar University, July 2023. GPA 3.62/4.0. IQAS assessed as equivalent to a four-year Canadian bachelor's degree.</p>
+        </div>
+        <div>
+          <h2>What I work with</h2>
+          <p class="ink">SQL Server and T-SQL (CTEs, window functions, stored procedures), star schema design, Power BI and DAX, Azure Data Factory, Azure SQL and Data Lake Storage, Excel and Power Query, and SAP MM.</p>
+          <p>Most of what I know about data I learned in operational jobs and by building projects on my own. I kept being the person who wrote the query or built the reconciliation sheet, so I decided to make that the job.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <h2>Get in touch</h2>
+    <div class="prose">
+      <p>If you're hiring for BI or data work in Calgary, I'd like to hear from you. Email me at <a href="mailto:elenizeleke16@gmail.com">elenizeleke16@gmail.com</a> or call <a href="tel:5877032703">587-703-2703</a>.</p>
+      <p>You can also find me on <a href="https://www.linkedin.com/in/eleni-liyew/" target="_blank" rel="noopener">LinkedIn</a> and <a href="https://github.com/eleni26" target="_blank" rel="noopener">GitHub</a>.</p>
+    </div>
+    <p class="small">Eleni Liyew, Calgary, AB. Updated November 2026.</p>
+  </footer>
+
+</div>
+</body>
+</html>
